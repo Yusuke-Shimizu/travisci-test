@@ -3,16 +3,3 @@
   tasks:
     - name: output message
       debug: msg="Hello Travis CI"
-
-- hosts: localhost
-  user: root
-  vars:
-    apache_listen_port_ssl: 443
-    apache_create_vhosts: true
-    apache_vhosts_filename: "vhosts.conf"
-    apache_vhosts:
-      - servername: "example.com"
-        documentroot: "/var/www/vhosts/example_com"
-  roles:
-    - { role: geerlingguy.apache }
-  remote_src: true

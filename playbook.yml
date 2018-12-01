@@ -3,3 +3,8 @@
   tasks:
     - name: output message
       debug: msg="Hello Travis CI"
+
+- hosts: localhost
+  user: root
+  roles:
+    - { role: geerlingguy.apache }

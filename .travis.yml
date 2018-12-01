@@ -5,7 +5,8 @@ before_install:
   - sw_vers
   - brew update
   - brew install ansible
-  - ansible-galaxy install -r requirements.yml
+  - mkdir roles
+  - ansible-galaxy install -r requirements.yml -p ./roles
 script:
   - ansible-playbook -vv playbook.yml -i hosts
 notifications:

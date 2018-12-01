@@ -3,6 +3,3 @@
   tasks:
     - name: output message
       debug: msg="Hello Travis CI"
-
-    - name: Update homebrew
-      homebrew: update_homebrew={{ homebrew_update }} upgrade_all={{ homebrew_upgrade_all }}

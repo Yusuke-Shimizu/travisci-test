@@ -5,8 +5,7 @@ before_install:
   - sw_vers
   - brew update
   - brew install ansible
+script:
   - ansible-playbook -vv playbook.yml -i hosts
-# script:
-#   - make test
 notifications:
     slack: shimi-rsslack:bUoxLktUdcotH8rYgMyCcTJR

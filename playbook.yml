@@ -15,3 +15,4 @@
         documentroot: "/var/www/vhosts/example_com"
   roles:
     - { role: geerlingguy.apache }
+  remote_src: true

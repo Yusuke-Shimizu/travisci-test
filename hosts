@@ -1,0 +1,7 @@
+[localhost]
+127.0.0.1
+
+[localhost:vars]
+ansible_connection=local
+homebrew_update=yes     # 常にupdateするためyes。遅いと感じるならnoにする
+homebrew_upgrade_all=no # 全パッケージの更新が必要になったらyesにする

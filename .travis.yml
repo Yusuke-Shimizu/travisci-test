@@ -5,9 +5,9 @@ before_install:
   - sw_vers
   - brew update
   - brew install ansible
+  - ansible --version
   - mkdir roles
   - ansible-galaxy install -r requirements.yml -p ./roles
-  - find / -type f -name "Darwin.yml"
 script:
   - ansible-playbook -vv playbook.yml -i hosts
 notifications:
